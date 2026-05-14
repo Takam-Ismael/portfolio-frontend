@@ -1,0 +1,25 @@
+<!-- src/app/components/header/header.component.html -->
+<header class="header">
+  <div class="container header-container">
+    <div class="logo">
+      <a routerLink="/" class="logo-link">
+        <span class="logo-text">TAKAM<span class="highlight">.</span></span>
+      </a>
+    </div>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
+        <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+        <li><a routerLink="/projects" routerLinkActive="active">Projects</a></li>
+        <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="mobile-menu-btn" (click)="toggleMenu()">☰</button>
+  </div>
+  <div class="mobile-menu" [class.show]="menuOpen">
+    <a routerLink="/" (click)="closeMenu()">Home</a>
+    <a routerLink="/about" (click)="closeMenu()">About</a>
+    <a routerLink="/projects" (click)="closeMenu()">Projects</a>
+    <a routerLink="/contact" (click)="closeMenu()">Contact</a>
+  </div>
+</header>

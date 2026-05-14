@@ -1,0 +1,100 @@
+<!-- src/app/components/home/home.component.html -->
+<div class="home">
+  <section class="hero">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-badge bg-pale-green">
+          <span>👋 Welcome to my portfolio</span>
+        </div>
+        <h1 class="hero-title">
+          I'm <span class="text-blue">Takam Sokoudjo<br>Ismael Ulrich</span>
+        </h1>
+        <p class="hero-subtitle">
+          Results-driven Computer Science graduate specializing in backend development 
+          and modern application architecture. Currently pursuing a Master's degree at 
+          Saint Jean University.
+        </p>
+        <div class="hero-buttons">
+          <a routerLink="/projects" class="btn btn-primary">View Projects</a>
+          <a routerLink="/contact" class="btn btn-outline">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="image-placeholder bg-blue">
+          <span>👨‍💻</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills-section">
+    <div class="container">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Backend</h3>
+          <div class="skill-items">
+            <span>Java/Spring Boot</span>
+            <span>Python/Django</span>
+            <span>Node.js</span>
+            <span>PHP</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Frontend</h3>
+          <div class="skill-items">
+            <span>Angular</span>
+            <span>React Native/React</span>
+            <span>JavaScript/Bootstrap</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Database & DevOps</h3>
+          <div class="skill-items">
+            <span>MySQL/PostgreSQL</span>
+            <span>Git/GitLab/GitHub</span>
+            <span>Docker/CI/CD Pipelines</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Soft Skills</h3>
+          <div class="skill-items">
+            <span>Project Management</span>
+            <span>Agile/Scrum</span>
+            <span>Time Management</span>
+            <span>Critical Thinking</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="featured-projects bg-pale-green">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-preview">
+        <div class="card">
+          <div class="card-content">
+            <h3>BTP Sarl System</h3>
+            <p>Monitors and manages construction sites. Manage Inventory construction stock.</p>
+            <a routerLink="/projects" class="btn btn-outline">Learn More →</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <h3>Agribind Application</h3>
+            <p>Develop the relationship between farmers, cooperate and the government.</p>
+            <a routerLink="/projects" class="btn btn-outline">Learn More →</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <h3>MeetIn Application</h3>
+            <p>A booking system to monitor room availability and reservations.</p>
+            <a routerLink="/projects" class="btn btn-outline">Learn More →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

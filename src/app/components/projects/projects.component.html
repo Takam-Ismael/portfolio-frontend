@@ -1,0 +1,29 @@
+<!-- src/app/components/projects/projects.component.html -->
+<div class="projects">
+  <section class="projects-hero bg-pale-green">
+    <div class="container">
+      <h1 class="section-title">My Projects</h1>
+      <p class="projects-intro">Here are some of the projects I've worked on</p>
+    </div>
+  </section>
+
+  <section class="projects-list">
+    <div class="container">
+      <div class="projects-grid">
+        <div class="project-card card" *ngFor="let project of projects">
+          <div class="project-content">
+            <div class="project-header">
+              <h3>{{ project.title }}</h3>
+              <span class="project-date">{{ project.date }}</span>
+            </div>
+            <p class="project-description">{{ project.description }}</p>
+            <div class="project-tech">
+              <span *ngFor="let tech of project.technologies" class="tech-tag">{{ tech }}</span>
+            </div>
+            <a [href]="project.url" target="_blank" rel="noopener" class="btn btn-primary project-link">View Project →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
